@@ -1,3 +1,4 @@
+/* Universal Selectors */
 *,
 *::before,
 *::after {
@@ -6,11 +7,20 @@
   box-sizing: inherit;
 }
 
+/* Css variables */
+:root {
+  --primary-color: #e67e22;
+  --secondary-color: #fdf2e9;
+}
+
+/* Set 1 rem=10px and default box-sizing model to border-box */
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
+/* Default styles */
 body {
   font-family: sans-serif;
   line-height: 1;
@@ -18,13 +28,88 @@ body {
   color: #555;
 }
 
-.hero {
-  max-width: 130rem;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr;
+/* Hero container */
+.section-hero {
+  background-color: var(--secondary-color);
+  padding: 9.6rem 0;
 }
 
+/* hero sub-container */
+.hero {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 9.6rem;
+}
+
+/* Main heading */
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+/* Description */
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+/* image of hero sections */
 .hero-img {
   width: 100%;
+}
+
+/* Container for cta and learn btn */
+.btn-container {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Generalized button class */
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 9px;
+  transition: all 0.3s ease-in-out 0.02s;
+}
+
+/* Button--cta specific class */
+.btn--cta:link,
+.btn--cta:visited {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Button--cta specific pseudo-class */
+.btn--cta:hover,
+.btn--cta:active {
+  background-color: #cf711f;
+  /* background-color: red; */
+}
+
+/* Button--cta specific class */
+.btn--learn:link,
+.btn--learn:visited {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Button--learn specific pseudo-class */
+.btn--learn:hover,
+.btn--learn:active {
+  color: #555;
+
+  background-color: var(--secondary-color);
+  /* Inside border */
+  box-shadow: inset 0 0 0 3px #fff;
 }
