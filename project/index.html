@@ -8,35 +8,87 @@
     <meta name="topic" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/img/omnifood-logo.png" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="app.js"></script>
   </head>
   <body>
-    <section class="section-hero">
-      <div class="hero">
-        <div class="hero-text-box">
-          <h1 class="heading-primary">
-            A healthy meal delivered to your door, every single day
-          </h1>
-          <p class="hero-description">
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs. We have delivered 250,000+ meals last year!
-          </p>
-          <div class="btn-container">
-            <a class="btn btn--cta" href="#">Start eating well</a>
-            <a class="btn btn--learn" href="#">Learn more &darr;</a>
+    <header class="header">
+      <img class="img-logo" src="assets/img/omnifood-logo.png" />
+      <nav class="navigation">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-links" href="#">How it works</a></li>
+          <li><a class="main-nav-links" href="#">Meals</a></li>
+          <li><a class="main-nav-links" href="#">Testimonials</a></li>
+          <li><a class="main-nav-links" href="#">Pricing</a></li>
+          <li>
+            <a class="nav-btn btn btn--cta" href="#"> Try for Free </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs. We have delivered 250,000+ meals last year!
+            </p>
+            <div class="btn-container">
+              <a class="btn btn--cta" href="#">Start eating well</a>
+              <a class="btn btn--learn" href="#">Learn more &darr;</a>
+            </div>
+            <div class="customer--faces">
+              <img
+                class="cust--image cust-1"
+                src="assets/img/customers/customer-1.jpg"
+              />
+              <img
+                class="cust--image"
+                src="assets/img/customers/customer-2.jpg"
+              />
+              <img
+                class="cust--image"
+                src="assets/img/customers/customer-3.jpg"
+              />
+              <img
+                class="cust--image"
+                src="assets/img/customers/customer-4.jpg"
+              />
+              <img
+                class="cust--image"
+                src="assets/img/customers/customer-5.jpg"
+              />
+              <img
+                class="cust--image last-image"
+                src="assets/img/customers/customer-6.jpg"
+              />
+              <p class="para">
+                <span class="orders--count">250,000+</span> delivered meals last
+                year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              loading="lazy"
+              class="hero-img"
+              src="assets/img/hero.png"
+              alt="A Woman enjoying food, meals and storage"
+            />
           </div>
         </div>
-        <div class="hero-img-box">
-          <img
-            loading="lazy"
-            class="hero-img"
-            src="assets/img/hero.png"
-            alt="A Woman enjoying food, meals and storage"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
