@@ -1,0 +1,139 @@
+/*********************************** Navbar   *******************************************/
+
+.header {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* For Sticky Header */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.img-logo {
+  height: 2.2rem;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 3.8rem;
+}
+
+.main-nav-links:link,
+.main-nav-links:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-links:hover,
+.main-nav-links:active {
+  color: #cf711f;
+}
+
+/* Applied to nav button */
+.nav-btn.btn.btn--cta {
+  padding: 1.2rem 2.4rem;
+}
+
+/*********************************** Hero Section  *******************************************/
+/* Hero Container */
+.section-hero {
+  background-color: var(--secondary-color);
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+/* hero sub-container */
+.hero {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 9.6rem;
+}
+
+/* Description */
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+/* image of hero sections */
+.hero-img {
+  width: 100%;
+}
+
+/*********************************** Customer Face Section  *******************************************/
+
+/* all cust face pic container */
+.customer--faces {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+/* all cust face pics */
+.cust--image {
+  border-radius: 50%;
+  width: 4.8rem;
+  height: auto;
+  margin-right: -3rem;
+  border: solid 3px var(--secondary-color);
+}
+/* last image pic */
+.last-image {
+  margin: 0;
+}
+
+/* para */
+.para {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Span tag order count */
+.orders--count {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/***********************************  Section-how  *******************************************/
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-img {
+  width: 35%;
+}
+.subheading {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #cf711f;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 800;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
