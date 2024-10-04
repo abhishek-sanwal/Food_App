@@ -3,7 +3,7 @@
   background-color: black;
 }
 
-/*********************************** Navbar   *******************************************/
+/***********************************     Navbar   *********************************************************************/
 
 .header {
   background-color: var(--secondary-color);
@@ -45,7 +45,7 @@
   padding: 1.2rem 2.4rem;
 }
 
-/*********************************** Hero Section  *******************************************/
+/*********************************** Hero Section ***************** *******************************************/
 /* Hero Container */
 .section-hero {
   background-color: var(--secondary-color);
@@ -75,7 +75,7 @@
   width: 100%;
 }
 
-/*********************************** Customer Face Section  *******************************************/
+/*********************************** Customer Face Section ************ *******************************************/
 
 /* all customers face pic container */
 .customer--faces {
@@ -109,7 +109,7 @@
   font-weight: 700;
 }
 
-/******************************* Featured Section *************************************/
+/******************************* Featured Section *************************************************************/
 
 /* Section */
 .section-featured {
@@ -134,7 +134,7 @@
   filter: brightness(0);
   opacity: 50%;
 }
-/***********************************  Section-how  *******************************************/
+/***********************************  Section-how  ************************************************************/
 
 .section-how {
   padding: 9.6rem 0;
@@ -200,7 +200,7 @@
   background-color: #fae5d3;
 }
 
-/************************************** Menu Section **************************************************************************/
+/************************************** Menu Section ***********************************************************************************/
 
 .section-meals {
   padding: 9.6rem 0;
@@ -324,7 +324,7 @@
   font-size: 1.8rem;
 }
 
-/*************************************Testimonials Section **************************************************************/
+/************************************* Testimonials Section **************************************************************/
 
 .section-testimonials {
   background-color: #fdf2e9;
@@ -361,7 +361,7 @@
   color: #6f6f6f;
 }
 
-/********************************************************** Gallery *************************************/
+/******************************************** Subsection Gallery *************************************/
 
 .gallery {
   gap: 1.6rem;
@@ -467,7 +467,7 @@
   line-height: 1.6rem;
 }
 
-/* Features */
+/****************************************** Subsection Features ***************************************************/
 
 .feature-icon {
   color: #e67e22;
@@ -489,4 +489,101 @@
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/************************************** Section Call to Action  **********************************************************************/
+.section-cta {
+  padding-bottom: 9.6rem;
+}
+.cta-img {
+  background-size: cover;
+  background-position: center;
+}
+
+.grid--cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.grid--cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  /* By default doesn't inherit */
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 9px;
+  background-color: #fdf2e9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+/* Submit button inside form */
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Change outline for accessability issues */
+.grid--cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* Image box */
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
