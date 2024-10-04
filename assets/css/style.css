@@ -380,3 +380,89 @@
 .gallery-img:hover {
   transform: scale(1.1);
 }
+
+/************************************* Pricing Section *****************************************************************************************/
+
+.section-pricing {
+  padding: 9.6rem;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.pricing-heading {
+  text-transform: capitalize;
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+
+.plan--starter {
+  justify-self: end;
+  border: solid 2px #fdf2e9;
+  padding: 4.6rem;
+}
+
+.plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan--complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.price-name {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.price-plan {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.price-plan span {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-right: 0.8rem;
+}
+
+.price-text {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  line-height: 1.6;
+}
+
+.plan-signup {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
