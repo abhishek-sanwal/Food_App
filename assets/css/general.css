@@ -87,6 +87,10 @@ strong {
   justify-content: space-around;
 }
 
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
 .heading-primary,
 .heading-secondary {
   font-weight: 700;
