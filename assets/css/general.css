@@ -203,3 +203,10 @@ strong {
 }
 
 /************************************************************************************************************************/
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
