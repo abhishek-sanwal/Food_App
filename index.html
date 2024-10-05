@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="" />
-    <meta
-      name="description"
-      content="A healthy meal delivered to your door, every single day
-"
-    />
+    <meta name="description" content="Author: Abhishek Sanwal, Illustrator:
+    Abhishek Sanwal, Category: Food, Web Development, content="A healthy meal
+    delivered to your door, every single day" " />
     <meta name="topic" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="keywords"
+      content="abhishek sanwal, 
+      abhishek github, 
+      abhishek food app, zomoto clone, abhishek sanwal linkedin,
+      abhishek sanwal github io, sanwal github"
+    />
     <title>OmniFood</title>
     <link rel="icon" href="assets/img/favicon.png" />
     <!-- CSS -->
@@ -18,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/general.css" />
     <!-- Then this -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media-queris.css" />
     <!-- CSS -->
     <!-- Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,6 +45,10 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/zenscroll@4.0.2/zenscroll-min.js"
+    ></script>
     <!-- JS -->
   </head>
   <body>
@@ -53,12 +62,20 @@
       /></a>
       <nav class="navigation">
         <ul class="main-nav-list">
-          <li><a class="main-nav-links" href="#">How it works</a></li>
-          <li><a class="main-nav-links" href="#">Meals</a></li>
-          <li><a class="main-nav-links" href="#">Testimonials</a></li>
-          <li><a class="main-nav-links" href="#">Pricing</a></li>
           <li>
-            <a class="nav-btn btn btn--cta" href="#"> Try for Free </a>
+            <a class="main-nav-links" href="#section-how">How it works</a>
+          </li>
+          <li><a class="main-nav-links" href="#section-meals">Meals</a></li>
+          <li>
+            <a class="main-nav-links" href="#section-testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li><a class="main-nav-links" href="#section-pricing">Pricing</a></li>
+          <li>
+            <a class="nav-btn btn btn--cta" href="#section-cta">
+              Try for Free
+            </a>
           </li>
         </ul>
       </nav>
@@ -77,8 +94,10 @@
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
             <div class="btn-container">
-              <a class="btn btn--cta" href="#">Start eating well</a>
-              <a class="btn btn--learn" href="#">Learn more &darr;</a>
+              <a class="btn btn--cta" href="#section-cta">Start eating well</a>
+              <a class="btn btn--learn" href="#section-how"
+                >Learn more &darr;</a
+              >
             </div>
             <div class="customer--faces">
               <img
@@ -170,7 +189,7 @@
         </div>
       </section>
       <!-- How Section -->
-      <section class="section-how">
+      <section id="section-how" class="section-how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">Your daily dose of help in 3 steps</h2>
@@ -238,7 +257,7 @@
 
       <!-- Meals Section -->
 
-      <section class="section-meals">
+      <section id="section-meals" class="section-meals">
         <div class="container text-center">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -348,7 +367,7 @@
       </section>
 
       <!-- Testimonials Section & Gallery Section Side by side -->
-      <section class="section-testimonials">
+      <section id="section-testimonials" class="section-testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -406,7 +425,7 @@
           </div>
         </div>
         <!-- Gallery Section -->
-        <div class="gallery grid grid--2-cols">
+        <div class="gallery">
           <figure class="gallery-item">
             <img
               loading="lazy"
@@ -508,7 +527,7 @@
       </section>
 
       <!-- Pricing Section -->
-      <section class="section-pricing">
+      <section id="section-pricing" class="section-pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -543,7 +562,7 @@
               </li>
             </ul>
             <div class="plan-signup">
-              <a class="btn btn--cta" href="#">Start eating well</a>
+              <a class="btn btn--cta" href="#section-cta">Start eating well</a>
             </div>
           </div>
           <div class="pricing-plan plan--complete">
@@ -575,7 +594,7 @@
               </li>
             </ul>
             <div class="plan-signup">
-              <a class="btn btn--cta" href="#">Start eating well</a>
+              <a class="btn btn--cta" href="#section-cta">Start eating well</a>
             </div>
           </div>
         </div>
@@ -623,7 +642,7 @@
       </section>
 
       <!-- CTA Action -->
-      <section class="section-cta">
+      <section id="section-cta" class="section-cta">
         <div class="container">
           <div class="grid--cta">
             <div class="cta-text-box">
