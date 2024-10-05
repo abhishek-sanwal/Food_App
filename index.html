@@ -143,12 +143,16 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              loading="lazy"
-              class="hero-img"
-              src="assets/img/hero.png"
-              alt="A Woman enjoying food, meals and storage"
-            />
+            <picture>
+              <source srcset="assets/img/hero.webp" type="image/webp" />
+              <source srcset="assets/img/hero.png" type="image/png" />
+              <img
+                loading="lazy"
+                class="hero-img"
+                src="assets/img/hero-min.png"
+                alt="A Woman enjoying food, meals and storage"
+              />
+            </picture>
           </div>
         </div>
       </section>
