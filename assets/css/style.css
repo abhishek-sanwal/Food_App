@@ -10,6 +10,25 @@
   padding: 0 4.8rem;
 }
 
+/* Sticky header */
+
+.sticky .header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 30;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/********************************************************** */
 .img-logo {
   height: 2.2rem;
 }
@@ -18,7 +37,7 @@
   display: flex;
   list-style-type: none;
   align-items: center;
-  gap: 3.8rem;
+  gap: 4.8rem;
 }
 
 .main-nav-links:link,
@@ -49,7 +68,7 @@
 
 /* hero sub-container */
 .hero {
-  max-width: 120rem;
+  max-width: 130rem;
   padding: 0 3.2rem;
   margin: 0 auto;
   display: grid;
@@ -359,6 +378,8 @@
 /******************************************** Subsection Gallery *************************************/
 
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
