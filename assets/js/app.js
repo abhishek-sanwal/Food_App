@@ -1,6 +1,14 @@
 console.log("Js is running");
+
+// Various dom Nodes
+const copyrightYear = document.querySelector(".copyright-year");
 const sectionHeroEl = document.querySelector(".section-hero");
 const headerEle = document.querySelector(".header");
+const links = document.querySelectorAll("a:link");
+
+// Mobile Navigation Menu button
+const menuButton = document.querySelector(".mobile-nav-icon");
+
 // Function to implement smooth scrolling
 function addScroll(event) {
   console.log("Scroll", event);
@@ -8,8 +16,10 @@ function addScroll(event) {
   // Prevent default behavior
   event.preventDefault();
 
+  // Get href attribute value
   const href = this.getAttribute("href");
 
+  // If link goes to the top of webpage
   if (href === "#") {
     window.scrollTo({
       top: 0,
@@ -17,13 +27,15 @@ function addScroll(event) {
     });
   }
 
+  // If link refers to a section
   if (href !== "#" && href.startsWith("#")) {
     const node = document.querySelector(href);
     node.scrollIntoView({ behavior: "smooth" });
   }
-
+  console.log("Button clicked", this);
   // Remove mobile navbar
-  if (this.classList.contains("main-nav-list")) {
+  if (this.classList.contains("main-nav-links")) {
+    console.log("closed");
     headerEle.classList.toggle("nav-open");
   }
 }
@@ -64,15 +76,12 @@ function handleStickyHeader() {
 ////////////////////////////////////////////////////////////////
 // Adding Event Listeners
 document.addEventListener("DOMContentLoaded", function () {
-  // Various dom Nodes
-  const headerEle = document.querySelector(".header");
-  const links = document.querySelectorAll("a:link");
-  const sectionHeroEl = document.querySelector(".section-hero");
-  // Add copyright year in html dynamically.
-  const copyrightYear = document.querySelector(".copyright-year");
-
   copyrightYear.textContent = new Date().getFullYear();
-  handleStickyHeader();
+  // handleStickyHeader();
   // Add smooth scrolling to each link
   links.forEach((link) => link.addEventListener("click", addScroll));
+  menuButton.addEventListener("click", (event) => {
+    console.log("event triggered");
+    headerEle.classList.toggle("nav-open");
+  });
 });
