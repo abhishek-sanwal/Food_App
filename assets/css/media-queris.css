@@ -301,8 +301,25 @@
   }
 }
 
+/* Below 384 px */
 @media screen and (width <=24em) {
+  html {
+    font-size: 45%;
+  }
   .btn-container {
     flex-direction: column;
+  }
+  .featured-image {
+    height: 0.8rem;
+  }
+}
+
+/* Below 300px */
+@media screen and (width <= 18rem) {
+  .diet-class .diet-item {
+    flex-wrap: wrap;
+  }
+  html {
+    font-size: 37.5%;
   }
 }
