@@ -11,6 +11,12 @@
   position: relative;
 }
 
+.navigation {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
 /* Sticky header */
 
 .sticky .header {

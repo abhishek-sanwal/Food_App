@@ -164,7 +164,7 @@
       <!-- Featured Section -->
       <section class="section-featured">
         <div class="container">
-          <h3 class="heading-quarter">As featured in</h3>
+          <h2 class="heading-quarter">As featured in</h2>
           <div class="flex space-around">
             <img
               loading="lazy"
@@ -385,6 +385,7 @@
                 class="test-img"
                 loading="lazy"
                 src="assets/img/customers/dave.jpg"
+                alt="Customer Dave Pic"
               />
               <blockquote class="testimonial-text">
                 Inexpensive, healthy and great-tasting meals, without even
@@ -397,6 +398,7 @@
                 class="test-img"
                 loading="lazy"
                 src="assets/img/customers/ben.jpg"
+                alt="Customer Ben Pic"
               />
               <blockquote class="testimonial-text">
                 The AI algorithm is crazy good, it chooses the right meals for
@@ -407,10 +409,11 @@
             </figure>
             <figure class="testimonial">
               <img
-                l
+                loading="lazy"
                 class="test-img"
                 loading="lazy"
                 src="assets/img/customers/steve.jpg"
+                alt="Customer-Steve"
               />
               <blockquote class="testimonial-text">
                 Omnifood is a life saver! I just started a company, so there's
@@ -421,8 +424,9 @@
             <figure class="testimonial">
               <img
                 class="test-img"
-                lloading="lazy"
+                loading="lazy"
                 src="assets/img/customers/hannah.jpg"
+                alt="Hannah-Steve"
               />
               <blockquote class="testimonial-text">
                 I got Omnifood for the whole family, and it frees up so much
@@ -439,7 +443,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-1.jpg"
-              alt=""
+              alt="A cup of a desert"
             />
           </figure>
           <figure class="gallery-item">
@@ -447,7 +451,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-2.jpg"
-              alt=""
+              alt="A cooked vegetables"
             />
           </figure>
           <figure class="gallery-item">
@@ -455,7 +459,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-3.jpg"
-              alt=""
+              alt="A Street food pic"
             />
           </figure>
           <figure class="gallery-item">
@@ -471,7 +475,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-5.jpg"
-              alt=""
+              alt="A chef preparing the food"
             />
           </figure>
           <figure class="gallery-item">
@@ -479,7 +483,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-6.jpg"
-              alt=""
+              alt="A beautiful yummy dish"
             />
           </figure>
 
@@ -488,7 +492,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-7.jpg"
-              alt=""
+              alt="A dish served on leaves in a traditional way"
             />
           </figure>
           <figure class="gallery-item">
@@ -496,7 +500,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-8.jpg"
-              alt=""
+              alt="A Jar full of colorful deserts"
             />
           </figure>
           <figure class="gallery-item">
@@ -504,7 +508,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-9.jpg"
-              alt=""
+              alt="A chef presenting their dish"
             />
           </figure>
           <figure class="gallery-item">
@@ -512,7 +516,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-10.jpg"
-              alt=""
+              alt="A chef cutting vegetables"
             />
           </figure>
           <figure class="gallery-item">
@@ -520,7 +524,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-11.jpg"
-              alt=""
+              alt="A wooden table filled with green vegetables and a dish in center"
             />
           </figure>
           <figure class="gallery-item">
@@ -528,7 +532,7 @@
               loading="lazy"
               class="gallery-img"
               src="assets/img/gallery/gallery-12.jpg"
-              alt=""
+              alt="A tasty burger of 5 layers "
             />
           </figure>
         </div>
@@ -658,13 +662,14 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form class="cta-form" action="#">
+              <form class="cta-form" name="signup" netlify action="#">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     type="text"
                     id="full-name"
                     placeholder="John Doe"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -673,6 +678,7 @@
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="abc@email.com"
                     required
                   />
@@ -681,7 +687,7 @@
                   <label for="select-where"
                     >From where did you hear about us?
                   </label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option value="">Please choose one option</option>
                     <option value="Facebook">Facebook</option>
                     <option value="Instagram">Instagram</option>
