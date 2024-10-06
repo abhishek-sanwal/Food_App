@@ -17,6 +17,6 @@ A Food Delivery AI Startup's **Fully Responsive** website, built using **HTML5, 
 ## Output:
 
 ![](assets/img/landing.png)
-![](assets/img/)
+![](assets/img/cta.png)
 
 ---
